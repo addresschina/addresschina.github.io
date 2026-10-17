@@ -76,7 +76,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default mb-2 country-box">
-                                                <a href="/argentina-address/" class="mx-3 my-2">阿根廷地址</a>
+                                                <a href="/argentina-address/" class="mx-3 my-2">阿根廷地址 </a>
                                                 <a href="/egypt-address/" class="mx-3 my-2">埃及地址</a>
                                                 <a href="/australia-address/" class="mx-3 my-2">澳大利亚地址</a>
                                                 <a href="/austria-address/" class="mx-3 my-2">奥地利地址</a>
@@ -491,6 +491,7 @@
 <script defer src="/assets/addons/xcblog/js/frontend/base.js"></script>
     <script>
         $(function(){
+            var temp = '';
             var cells = document.querySelectorAll('#address-box .result-box dl dd span');
 
             cells.forEach(function (cell) {
@@ -508,7 +509,7 @@
                                     sel.removeAllRanges();
                                     sel.addRange(range);
                                 }, 1);
-                            }
+                            } 
                         } else if (document.selection) {
                             sel = document.selection.createRange();
                             if (sel.text === '') {
